@@ -16,7 +16,10 @@
     ├── src                    // 源码目录
     │   ├── components             // 组件
     │   ├── config                 // 项目开发配置
-    │   ├── images                 // 图片文件
+    │   ├── assets
+    │   │   ├── icon                   // icon图片
+    │   │   ├── tab                    // 底部tab图片
+    │   │   └── temp                   // 临时图片文件（后期删除）
     │   ├── models                 // redux models
     │   ├── pages                  // 页面文件目录
     │   │   └── home
@@ -28,5 +31,4 @@
     │   ├── utils              // 常用工具类
     │   ├── app.js             // 入口文件
     │   └── index.html
-    ├── package.json
-    └── template.js            // pages模版快速生成
+    └── package.json

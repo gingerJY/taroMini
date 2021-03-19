@@ -1,0 +1,33 @@
+/* colors
+用法  color: $color-main;
+-------------------------- */
+$color-main: #2ACF7B !default;
+
+
+/* text
+用法  @extend %f42
+-------------------------- */
+$text-sizes: 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42;
+@each $size in $text-sizes {
+  %f#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+$text-weight: 400, 500, 600, 700, 800;
+@each $weight in $text-weight {
+  %f#{$weight} {
+    font-weight: #{$weight};
+  }
+}
+
+/* methods
+用法  @include flex_row(center)
+-------------------------- */
+// flex横向排列
+@mixin flex_row($type: space-between) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: $type;
+}

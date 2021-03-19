@@ -1,0 +1,6 @@
+@import "../../styles/mixin";
+
+.text1 {
+  color: $color-main;
+  @extend %f42;
+}
