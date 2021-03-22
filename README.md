@@ -1,4 +1,4 @@
-# taroMini
+# taromini
 使用taro做的一个微信小程序demo，日常学习练习。
 
 ## 项目运行

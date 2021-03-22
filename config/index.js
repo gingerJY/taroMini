@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'eduToHome',
+  projectName: 'taromini',
   date: '2021-3-19',
   designWidth: 750,
   deviceRatio: {

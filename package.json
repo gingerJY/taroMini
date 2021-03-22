@@ -1,8 +1,8 @@
 {
-  "name": "eduToHome",
+  "name": "taromini",
   "version": "1.0.0",
   "private": true,
-  "description": "春藤家校",
+  "description": "一个小程序by taro",
   "templateInfo": {
     "name": "default",
     "typescript": false,
