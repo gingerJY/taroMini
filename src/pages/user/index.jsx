@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
-import { KAppBar } from '../../components/index'
+import { KAppBar } from '@/components/index'
 import './index.scss'
 
 export default class User extends Component {
