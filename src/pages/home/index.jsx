@@ -1,27 +1,22 @@
 import { Component } from 'react'
-import Taro from "@tarojs/taro";
 import { View, Text } from '@tarojs/components'
+import { connect } from 'react-redux'
 import './index.scss'
 
-export default class Index extends Component {
+class Index extends Component {
 
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
+  componentDidMount () {
+    console.log('props', this.props)
+  }
 
   render () {
-    console.log(Taro.options.html)
-    console.log('transformElement', Taro.options.html.transformElement)
+    const { name } = this.props
     return (
       <View className='home'>
-        <Text className='text1'>Hello world!</Text>
+        <Text className='title'>{name}</Text>
       </View>
     )
   }
 }
+
+export default connect(({ common }) => ({ ...common }))(Index);

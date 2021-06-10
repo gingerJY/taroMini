@@ -12,13 +12,21 @@ function createApp(opt) {
   app = create(opt);
   app.use(createLoading({}));
 
+  // 注入model
   if (!global.registered) opt.models.forEach(model => app.model(model));
   global.registered = true;
   app.start();
 
+  // 设置store
   store = app._store;
   app.getStore = () => store;
+  app.use({
+    onError(err) {
+      console.log(err);
+    }
+  })
 
+  // 设置dispatch
   dispatch = store.dispatch;
 
   app.dispatch = dispatch;

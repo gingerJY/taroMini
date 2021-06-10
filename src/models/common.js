@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro';
 export default {
   namespace: 'common',
   state: {
-    access_token: Taro.getStorageSync('access_token'),
+    name: '麦豇豆',
   },
 
   effects: {},

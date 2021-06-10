@@ -1,27 +1,21 @@
 import { Component } from 'react'
+import { Provider } from 'react-redux'
 import './app.scss'
 import dva from './utils/dva'
-import models from './models'
+import models from './models/index'
 
 const dvaApp = dva.createApp({
   initialState: {},
-  models: models,
+  models,
 });
 const store = dvaApp.getStore();
 
 class App extends Component {
-
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
-
   // this.props.children 是将要会渲染的页面
   render () {
-    return this.props.children
+    return <Provider store={store}>
+      {this.props.children}
+    </Provider>
   }
 }
 

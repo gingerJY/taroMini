@@ -2,8 +2,8 @@
 .home {
   height: 100vh;
   background: $color-main;
-}
-.text1 {
-  color: $color-main;
-  @extend %f42;
+  .title {
+    font-size: 40px;
+    font-weight: 500;
+  }
 }
