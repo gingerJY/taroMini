@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
-import { KAppBar } from '@/components/index'
+import { ColorfulShadow } from '@/components/cute/index'
 import './index.scss'
 
 export default class User extends Component {
@@ -18,16 +18,8 @@ export default class User extends Component {
   render () {
     return (
       <View className='user'>
-        <KAppBar
-          title='我的'
-          background='#fff'
-          back
-          home
-          onBack={this.handlerGobackClick}
-          onHome={this.handlerGohomeClick}
-        />
-        {/* <KAppBar renderLeft={<Text className='text1'>Hello world!</Text>} /> */}
         <Text className='text1'>Hello world!</Text>
+        <ColorfulShadow />
       </View>
     )
   }

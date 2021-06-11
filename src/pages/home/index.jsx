@@ -5,11 +5,11 @@ import './index.scss'
 
 class Index extends Component {
 
-  componentDidMount () {
+  componentDidMount() {
     console.log('props', this.props)
   }
 
-  render () {
+  render() {
     const { name } = this.props
     return (
       <View className='home'>

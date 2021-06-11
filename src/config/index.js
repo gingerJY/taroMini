@@ -11,4 +11,4 @@ export const AppSecret = '';
 export const AuthHead = '';
 
 // 输出日志信息
-export const noConsole = false;
+export const noConsole = true;
